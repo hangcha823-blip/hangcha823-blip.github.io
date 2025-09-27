@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="google-site-verification" content="3OTQIwDvexerX1J8KdHda7TTw1yAgH5Ry6IBnG3lXww" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>행차 컴퍼니 | Photoro</title>
+  <meta name="description" content="행차 컴퍼니 — Photoro 앱 운영. 위치 정보와 미디어를 결합하여 사람들이 실제 세상에서 일어나는 일들을 손쉽게 볼 수 있게 한다.">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --ink:#0f172a;
+      --muted:#64748b;
+      --brand:#2563eb;
+      --card:#f8fafc;
+      --line:#e2e8f0;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, Helvetica Neue, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.65;
+      letter-spacing:-.2px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{max-width:1000px;margin:0 auto;padding:28px 20px 64px}
+    header.nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter:saturate(140%) blur(6px);
+      background:rgba(255,255,255,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav__in{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{font-weight:800;font-size:18px;letter-spacing:-.3px}
+    .pill{padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted);font-size:12px;font-weight:700}
+    .hero{
+      display:grid;grid-template-columns:1.2fr .8fr;gap:28px;margin-top:26px;align-items:center;
+    }
+    @media (max-width: 860px){ .hero{grid-template-columns:1fr} }
+    .card{
+      background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px;
+    }
+    h1{margin:0 0 10px;font-size:clamp(28px,4.2vw,42px);line-height:1.2;letter-spacing:-.8px}
+    .lead{color:var(--muted);font-size:clamp(16px,2.2vw,18px);margin:0}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;
+      font-weight:800;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:#fff;
+      transition:transform .06s ease, box-shadow .12s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:var(--brand);color:#fff;border-color:transparent;box-shadow:0 10px 22px rgba(37,99,235,.18)}
+    .section{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    @media (max-width: 860px){ .section{grid-template-columns:1fr} }
+    h2{margin:0 0 10px;font-size:22px;letter-spacing:-.3px}
+    p{margin:0 0 12px}
+    ul{margin:8px 0 0 18px}
+    .muted{color:var(--muted)}
+    footer{margin-top:46px;padding-top:24px;border-top:1px dashed var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;background:#0f172a;color:#e2e8f0;padding:10px 12px;border-radius:10px;border:1px solid #1e293b;display:inline-block}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__in">
+      <div class="brand">행차 컴퍼니</div>
+      <div class="pill">Photoro</div>
+    </div>
+  </header>
 
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1>photoro 앱을 운영하고 있습니다</h1>
+        <p class="lead">위치 정보와 미디어를 결합하여 사람들이 실제 세상에서 일어나는 일들을 손쉽게 볼 수 있게 한다.</p>
+        <div class="cta">
+          <a class="btn primary" href="#" aria-label="Photoro 앱">Photoro 앱</a>
+          <a class="btn" href="#contact" aria-label="문의하기">문의하기</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Photoro 앱</h2>
+        <p>다른 사용자들이 올린 최근 7일간의 사진을 조회할 수 있습니다. 내가 올린 사진을 다른 사람들이 조회하면 보상을 얻을 수 있어요!</p>
+        <div style="margin-top:10px"><span class="mono">최근 7일 · 위치 기반 · 사진 보상</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="card">
+        <h2>질문이 있으신가요?</h2>
+        <p>프로젝트에 관한 자세한 내용이 궁금하시다면 이메일(<a href="mailto:hangcha823@gmail.com">hangcha823@gmail.com</a>)로 문의해 주세요.</p>
+      </div>
+      <div class="card">
+        <h2>행차 컴퍼니</h2>
+        <p class="muted">Photoro를 통해 실제 세상의 최신 모습을 가까이에서 볼 수 있도록, 위치 데이터와 미디어를 연결하는 제품을 만듭니다.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> 행차 컴퍼니 · All rights reserved. | 
+      <a href="privacy.html" style="color:inherit;text-decoration:underline;">개인정보처리방침</a>
+      </div>
+      <div class="muted">Hosted on GitHub Pages</div>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
