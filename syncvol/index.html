@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta_title">SyncVol | Hangcha Company</title>
+  <meta name="description" content="SyncVol overview, privacy policy, and terms." data-i18n-attr="content:meta_description">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;600;700&display=swap');
+
+    :root{
+      --bg:#07151a;
+      --ink:#f1f5f9;
+      --muted:#94a3b8;
+      --brand:#22d3ee;
+      --card:#0f1f26;
+      --line:#1f2f36;
+      --radius:18px;
+      --shadow:0 16px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+      color:var(--ink);
+      background:radial-gradient(1200px 700px at 100% -10%, rgba(34,211,238,.25), transparent 60%), var(--bg);
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 70px}
+    header{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:saturate(130%) blur(8px);
+      background:rgba(7,21,26,.78);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+    .brand{font-family:"Space Grotesk", "Noto Sans KR", sans-serif;font-weight:700;font-size:18px;letter-spacing:.2px}
+    .links{display:flex;gap:14px;font-size:14px;color:var(--muted)}
+    .links a{text-decoration:none;border-bottom:1px solid transparent}
+    .links a:hover{border-color:currentColor}
+
+    .hero{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;margin-top:32px;align-items:center}
+    @media (max-width: 860px){.hero{grid-template-columns:1fr}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:26px}
+    h1{margin:0 0 10px;font-family:"Space Grotesk", "Noto Sans KR", sans-serif;font-size:clamp(26px,4vw,40px);line-height:1.15}
+    h2{margin:0 0 12px;font-size:20px}
+    p{margin:0 0 12px}
+    .lead{color:var(--muted);font-size:clamp(15px,2vw,18px)}
+
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);text-decoration:none;font-weight:700;background:#0b1a20}
+    .btn.primary{background:linear-gradient(120deg, #22d3ee, #22c55e);border-color:transparent;box-shadow:0 12px 24px rgba(34,211,238,.22)}
+
+    .grid{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    @media (max-width: 860px){.grid{grid-template-columns:1fr}}
+
+    footer{margin-top:40px;padding-top:24px;border-top:1px dashed var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand" data-i18n="brand">SyncVol</div>
+      <nav class="links" aria-label="SyncVol primary links" data-i18n-attr="aria-label:nav_aria">
+        <a href="../" data-i18n="nav_home">Home</a>
+        <a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="nav_terms">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1 data-i18n="hero_title">Volume that adapts to your environment</h1>
+        <p class="lead" data-i18n="hero_lead">SyncVol detects ambient noise and adjusts volume automatically, keeping focus and comfort in balance.</p>
+        <div class="cta">
+          <a class="btn primary" href="privacy.html" data-i18n="hero_privacy">Privacy Policy</a>
+          <a class="btn" href="terms.html" data-i18n="hero_terms">Terms of Service</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 data-i18n="overview_title">At a glance</h2>
+        <p data-i18n="overview_body">Smart volume automation tailored to the way you listen.</p>
+        <p class="lead" data-i18n="overview_tags">Auto volume · Ambient noise · Custom tuning</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2 data-i18n="features_title">Core features</h2>
+        <p data-i18n="features_body">Detect noise patterns and keep volume within the range you prefer.</p>
+      </article>
+      <article class="card">
+        <h2 data-i18n="settings_title">Personalized controls</h2>
+        <p data-i18n="settings_body">Fine-tune sensitivity, minimum and maximum levels, and default behaviors.</p>
+      </article>
+    </section>
+
+    <footer>
+      <div data-i18n="footer_brand">© 2024 Hangcha Company · SyncVol</div>
+      <div class="muted" data-i18n="footer_note">Privacy · Terms</div>
+    </footer>
+  </main>
+
+  <script>
+    window.TRANSLATIONS = {
+      en: {
+        meta_title: 'SyncVol | Hangcha Company',
+        meta_description: 'SyncVol overview, privacy policy, and terms.',
+        brand: 'SyncVol',
+        nav_aria: 'SyncVol primary links',
+        nav_home: 'Home',
+        nav_privacy: 'Privacy Policy',
+        nav_terms: 'Terms of Service',
+        hero_title: 'Volume that adapts to your environment',
+        hero_lead: 'SyncVol detects ambient noise and adjusts volume automatically, keeping focus and comfort in balance.',
+        hero_privacy: 'Privacy Policy',
+        hero_terms: 'Terms of Service',
+        overview_title: 'At a glance',
+        overview_body: 'Smart volume automation tailored to the way you listen.',
+        overview_tags: 'Auto volume · Ambient noise · Custom tuning',
+        features_title: 'Core features',
+        features_body: 'Detect noise patterns and keep volume within the range you prefer.',
+        settings_title: 'Personalized controls',
+        settings_body: 'Fine-tune sensitivity, minimum and maximum levels, and default behaviors.',
+        footer_brand: '© ' + new Date().getFullYear() + ' Hangcha Company · SyncVol',
+        footer_note: 'Privacy · Terms'
+      }
+    };
+  </script>
+  <script src="../i18n.js"></script>
+</body>
+</html>
