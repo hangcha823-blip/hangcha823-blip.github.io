@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta name="google-site-verification" content="3OTQIwDvexerX1J8KdHda7TTw1yAgH5Ry6IBnG3lXww" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>행차 컴퍼니 | Photoro · SyncVol</title>
-  <meta name="description" content="행차 컴퍼니 — Photoro와 SyncVol 앱을 운영합니다.">
+  <title data-i18n="meta_title">Hangcha Company | Photoro · SyncVol</title>
+  <meta name="description" content="Hangcha Company builds Photoro and SyncVol apps." data-i18n-attr="content:meta_description">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Noto+Sans+KR:wght@400;600;700&display=swap');
 
@@ -111,11 +111,12 @@
 <body>
   <header class="nav">
     <div class="nav__in">
-      <div class="brand">행차 컴퍼니</div>
-      <nav class="nav__links" aria-label="주요 링크">
-        <a href="#apps">앱</a>
-        <a href="#contact">문의</a>
-        <a href="syncvol/">SyncVol</a>
+      <div class="brand" data-i18n="brand">Hangcha Company</div>
+      <nav class="nav__links" aria-label="Primary links" data-i18n-attr="aria-label:nav_primary_aria">
+        <a href="#apps" data-i18n="nav_apps">Apps</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="photoro/" data-i18n="nav_photoro">Photoro</a>
+        <a href="syncvol/" data-i18n="nav_syncvol">SyncVol</a>
       </nav>
     </div>
   </header>
@@ -123,73 +124,118 @@
   <main class="wrap">
     <section class="hero">
       <div class="card reveal" style="--i:1">
-        <h1>일상 속 데이터를 더 쉽게, 더 유용하게</h1>
-        <p class="lead">행차 컴퍼니는 위치와 환경 데이터를 연결해 사용자에게 실질적인 가치를 주는 앱을 만듭니다. Photoro의 현장성, SyncVol의 자동화가 그 시작입니다.</p>
+        <h1 data-i18n="hero_title">Make everyday data easier and more useful</h1>
+        <p class="lead" data-i18n="hero_lead">Hangcha Company connects location and environment data to deliver real value. Photoro brings immediacy, SyncVol brings automation.</p>
         <div class="cta">
-          <a class="btn primary" href="photoro/" aria-label="Photoro 페이지">Photoro 페이지</a>
-          <a class="btn alt" href="syncvol/" aria-label="SyncVol 페이지">SyncVol 페이지</a>
+          <a class="btn primary" href="photoro/" data-i18n="hero_photoro_btn" data-i18n-attr="aria-label:hero_photoro_aria">Photoro page</a>
+          <a class="btn alt" href="syncvol/" data-i18n="hero_syncvol_btn" data-i18n-attr="aria-label:hero_syncvol_aria">SyncVol page</a>
         </div>
       </div>
       <div class="card reveal" style="--i:2">
-        <h2>운영 중인 앱</h2>
-        <p class="muted">각 앱의 소개, FAQ, 개인정보처리방침 등은 개별 페이지에서 확장됩니다.</p>
-        <div class="chip" style="margin-top:8px"><b>확장형 구조</b> · 앱별 서브페이지 지원</div>
+        <h2 data-i18n="apps_title">Active apps</h2>
+        <p class="muted" data-i18n="apps_lead">Each app has its own details, FAQ, privacy policy, and terms on separate pages.</p>
+        <div class="chip" style="margin-top:8px"><b data-i18n="apps_chip_bold">Extensible structure</b> · <span data-i18n="apps_chip">App-specific subpages supported</span></div>
       </div>
     </section>
 
     <section class="apps" id="apps">
       <article class="card app-card reveal" style="--i:3">
         <div class="app-title">
-          <h2>Photoro</h2>
-          <span class="badge">Media · Location</span>
+          <h2 data-i18n="photoro_title">Photoro</h2>
+          <span class="badge" data-i18n="photoro_badge">Media · Location</span>
         </div>
-        <p>다른 사용자들이 올린 최근 사진을 조회하고, 내가 올린 사진이 조회되면 보상을 얻는 위치 기반 미디어 앱입니다.</p>
+        <p data-i18n="photoro_desc">A location-based media app where you explore recent photos from others and earn rewards when your uploads get views.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
-          <span class="mono">최신 사진 · 위치 기반 · 사진 보상</span>
+          <span class="mono" data-i18n="photoro_tags">Latest photos · Location-based · Photo rewards</span>
         </div>
         <div class="cta" style="margin-top:16px">
-          <a class="btn" href="photoro/" aria-label="Photoro 소개">소개 페이지</a>
-          <a class="btn" href="photoro/privacy.html" aria-label="Photoro 개인정보처리방침">개인정보처리방침</a>
+          <a class="btn" href="photoro/" data-i18n="photoro_btn" data-i18n-attr="aria-label:photoro_btn_aria">Photoro page</a>
         </div>
       </article>
 
       <article class="card app-card reveal" style="--i:4">
         <div class="app-title">
-          <h2>SyncVol</h2>
-          <span class="badge">Audio · Automation</span>
+          <h2 data-i18n="syncvol_title">SyncVol</h2>
+          <span class="badge" data-i18n="syncvol_badge">Audio · Automation</span>
         </div>
-        <p>주변 소음을 감지해 볼륨을 자동으로 조절하는 앱입니다. 집중과 일상을 방해하지 않는 스마트 볼륨 환경을 만듭니다.</p>
+        <p data-i18n="syncvol_desc">An app that detects ambient noise and automatically adjusts volume, creating a smart listening environment.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
-          <span class="mono">자동 볼륨 · 환경 소음 · 맞춤 설정</span>
+          <span class="mono" data-i18n="syncvol_tags">Auto volume · Ambient noise · Custom tuning</span>
         </div>
         <div class="cta" style="margin-top:16px">
-          <a class="btn" href="syncvol/" aria-label="SyncVol 소개">소개 페이지</a>
-          <a class="btn" href="syncvol/privacy.html" aria-label="SyncVol 개인정보처리방침">개인정보처리방침</a>
+          <a class="btn" href="syncvol/" data-i18n="syncvol_btn" data-i18n-attr="aria-label:syncvol_btn_aria">SyncVol page</a>
         </div>
       </article>
     </section>
 
     <section class="section" id="contact">
       <div class="card reveal" style="--i:5">
-        <h2>문의하기</h2>
-        <p>프로젝트에 관한 자세한 내용이 궁금하시다면 이메일(<a href="mailto:hangcha823@gmail.com">hangcha823@gmail.com</a>)로 문의해 주세요.</p>
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p data-i18n-html="contact_body">For more information, email <a href="mailto:hangcha823@gmail.com">hangcha823@gmail.com</a>.</p>
       </div>
       <div class="card reveal" style="--i:6">
-        <h2>행차 컴퍼니</h2>
-        <p class="muted">현장성 있는 미디어 경험과 상황 인지형 자동화를 통해 사용자에게 새로운 효율과 즐거움을 제공합니다.</p>
+        <h2 data-i18n="company_title">Hangcha Company</h2>
+        <p class="muted" data-i18n="company_body">We deliver efficient, context-aware experiences through on-site media and smart automation.</p>
       </div>
     </section>
 
     <footer>
       <div>
-        © <span id="y"></span> 행차 컴퍼니 · All rights reserved. Photoro 및 SyncVol 관련 이미지, 텍스트, UI 콘텐츠의 무단 복제·배포를 금합니다.
-        <a href="photoro/privacy.html" style="color:inherit;text-decoration:underline;">Photoro 개인정보처리방침</a> ·
-        <a href="syncvol/privacy.html" style="color:inherit;text-decoration:underline;">SyncVol 개인정보처리방침</a>
+        <span data-i18n="footer_rights">©</span> <span id="y"></span>
+        <span data-i18n="footer_company">Hangcha Company · All rights reserved. Unauthorized reproduction or distribution of Photoro and SyncVol related assets is prohibited.</span>
+        <a href="photoro/" style="color:inherit;text-decoration:underline;" data-i18n="footer_photoro">Photoro</a> ·
+        <a href="syncvol/" style="color:inherit;text-decoration:underline;" data-i18n="footer_syncvol">SyncVol</a>
       </div>
-      <div class="muted">Hosted on GitHub Pages</div>
+      <div class="muted" data-i18n="footer_hosted">Hosted on GitHub Pages</div>
     </footer>
   </main>
 
+  <script>
+    window.TRANSLATIONS = {
+      en: {
+        meta_title: 'Hangcha Company | Photoro · SyncVol',
+        meta_description: 'Hangcha Company builds Photoro and SyncVol apps.',
+        brand: 'Hangcha Company',
+        nav_primary_aria: 'Primary links',
+        nav_apps: 'Apps',
+        nav_contact: 'Contact',
+        nav_photoro: 'Photoro',
+        nav_syncvol: 'SyncVol',
+        hero_title: 'Make everyday data easier and more useful',
+        hero_lead: 'Hangcha Company connects location and environment data to deliver real value. Photoro brings immediacy, SyncVol brings automation.',
+        hero_photoro_btn: 'Photoro page',
+        hero_photoro_aria: 'Photoro page',
+        hero_syncvol_btn: 'SyncVol page',
+        hero_syncvol_aria: 'SyncVol page',
+        apps_title: 'Active apps',
+        apps_lead: 'Each app has its own details, FAQ, privacy policy, and terms on separate pages.',
+        apps_chip_bold: 'Extensible structure',
+        apps_chip: 'App-specific subpages supported',
+        photoro_title: 'Photoro',
+        photoro_badge: 'Media · Location',
+        photoro_desc: 'A location-based media app where you explore recent photos from others and earn rewards when your uploads get views.',
+        photoro_tags: 'Latest photos · Location-based · Photo rewards',
+        photoro_btn: 'Photoro page',
+        photoro_btn_aria: 'Photoro page',
+        syncvol_title: 'SyncVol',
+        syncvol_badge: 'Audio · Automation',
+        syncvol_desc: 'An app that detects ambient noise and automatically adjusts volume, creating a smart listening environment.',
+        syncvol_tags: 'Auto volume · Ambient noise · Custom tuning',
+        syncvol_btn: 'SyncVol page',
+        syncvol_btn_aria: 'SyncVol page',
+        contact_title: 'Contact',
+        contact_body: 'For more information, email <a href=\"mailto:hangcha823@gmail.com\">hangcha823@gmail.com</a>.',
+        company_title: 'Hangcha Company',
+        company_body: 'We deliver efficient, context-aware experiences through on-site media and smart automation.',
+        footer_rights: '©',
+        footer_company: 'Hangcha Company · All rights reserved. Unauthorized reproduction or distribution of Photoro and SyncVol related assets is prohibited.',
+        footer_photoro: 'Photoro',
+        footer_syncvol: 'SyncVol',
+        footer_hosted: 'Hosted on GitHub Pages'
+      }
+    };
+  </script>
+  <script src="i18n.js"></script>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
